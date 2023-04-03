@@ -4,7 +4,7 @@ import argparse
 
 # Función para generar todas las posibles combinaciones de 5 letras del alfabeto en inglés
 def generate_combinations():
-    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/+="
     for combination in itertools.product(alphabet, repeat=5):
         yield ''.join(combination)
 
